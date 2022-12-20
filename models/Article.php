@@ -20,6 +20,9 @@ class Article extends Model{
         }
     }
 
+    //SETTERS
+    
+
     public function setId($id){
         $id = (int) $id;
 
@@ -40,6 +43,7 @@ class Article extends Model{
     public function setDate($date){
         $this->_date = $date;
     }
+
     //GETTERS
 
     public function id(){
@@ -48,7 +52,7 @@ class Article extends Model{
     public function title(){
         return $this->_title;
     }
-    public function conten(){
+    public function content(){
         return $this->_content;
     }
     public function date(){
